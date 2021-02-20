@@ -11,7 +11,7 @@ def plus_one(A: List[int]) -> List[int]:
             break
         A[i] = 0
         A[i - 1] += 1
-    else:
+    else: # this else is a falsy to a for loop which runs after for loop is completed
         if A[0] == 10:
             # There is a carry-out, so we need one more digit to store the result.
             # A slick way to do this is to append a 0 at the end of the array,
